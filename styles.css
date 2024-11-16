@@ -1,0 +1,86 @@
+/* Estilo general de la página */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Fondo blanco */
+  color: #5c4033; /* Marrón oscuro para el texto */
+}
+
+/* Estilo exclusivo para la página index.html */
+body:not(.secondary-page) .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+body:not(.secondary-page) .logo-image {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+body:not(.secondary-page) .navigation {
+  display: flex;
+  gap: 20px;
+}
+
+body:not(.secondary-page) .navigation a {
+  color: #5c4033;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+body:not(.secondary-page) .navigation a:hover {
+  color: #d94e1f;
+}
+
+/* Estilo específico para las páginas adicionales */
+.secondary-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.secondary-page header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 4px solid #bfa17f;
+}
+
+.secondary-page .logo img {
+  height: 40px;
+  width: auto;
+}
+
+.secondary-page .navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.secondary-page .navigation a {
+  color: #5c4033;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.secondary-page .navigation a:hover {
+  color: #d94e1f;
+}
+
+.secondary-page main h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #5c4033;
+  text-align: center;
+}
